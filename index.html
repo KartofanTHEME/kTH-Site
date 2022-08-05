@@ -18,6 +18,11 @@
       <!--scripts-->
       <script src="../js/script.js" defer></script>
       <script src="../assets/ie-emulation-modes-warning.js"></script>
+<script>
+var thisyear = time.getYear();
+if (thisyear < 2000)
+thisyear = thisyear + 1900;
+</script>
     </head>
     <body>
     <!--navbar-->
@@ -111,7 +116,8 @@
       <!--footer-->
       <div class="page-header"></div>
       <footer>
-        <p>&copy; 2018-<!--change year then it necessary-->2021 kTH-Studio &middot; 
+        <p>&copy; 2018-<!--change year then it necessary--><script>document.write(thisyear);
+</script> kTH-Studio &middot; 
           <a href="policy.html" class="lang" key="policy">Политика конфиденциальности</a> &middot; 
           <a href="user_agreement.html" class="lang" key="user_agreement">Соглашение подписчика kTH-Studio</a>
         </p>
